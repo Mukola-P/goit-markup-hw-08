@@ -1,6 +1,23 @@
-.container {
-  width: 1200px;
+.container{
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  
+  border: 1px solid firebrick;
+
 }
+
+@media screen and (min-width: 480px){
+  .container{
+    width: 480;
+    margin: 0 auto;
+  }
+}
+  
+
+// .container {
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin: 0 auto;
+// }
