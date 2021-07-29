@@ -57,7 +57,7 @@ ol {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480;
+    width: 480px;
     margin: 0 auto;
   }
 }
