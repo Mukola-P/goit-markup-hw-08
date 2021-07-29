@@ -106,9 +106,13 @@ ol {
   padding-bottom: 60px;
 }
 
+.skill__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .skill__roster {
   padding-left: 0;
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .icon-group {
@@ -146,19 +150,21 @@ ol {
   .skill__roster {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .roster__title {
+    text-align: left;
   }
   .skill__item {
     width: 354px;
-  }
-  .skill__item:nth-child(2n) {
-    margin-left: 30px;
-  }
-  .skill__item .roster__title {
-    text-align: left;
+    height: 251px;
+    margin-bottom: 30px;
+    margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .skill__roster {
     display: flex;
     flex-wrap: nowrap;
@@ -166,9 +172,7 @@ ol {
   .skill__item {
     flex-basis: calc((100%-120) / 4);
     width: 270px;
-  }
-  .skill__item:not(:first-child) {
-    margin-left: 30px;
+    height: 251px;
   }
 }
 
