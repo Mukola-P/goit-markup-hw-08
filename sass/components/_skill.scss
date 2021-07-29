@@ -1,9 +1,91 @@
+.skill {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .skill__roster {
-  // display: flex;
+
 padding-left: 0;
 margin-left: 0;
-
 }
+.icon-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 120px;
+  
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+.skill__description {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+  color: var(--third-color);
+}
+.roster__title {
+font-weight: bold;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.roster_down {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px){
+  
+.skill__roster{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill__item {
+  width: 354px;
+
+   &:nth-child(2n){
+  margin-left: 30px;
+  }
+
+ .roster__title {
+text-align: left;
+  }
+ }
+}
+
+@media screen and (min-width: 1200px){
+.skill__roster {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.skill__item {
+  flex-basis: calc((100%-120) / 4);
+  width: 270px;
+
+  &:not(:first-child){
+  margin-left: 30px;
+  }
+}
+}
+
+
+ 
+
+
+// .skill__roster {
+//   // display: flex;
+// padding-left: 0;
+// margin-left: 0;
+
+// }
 // .skill {
 //   padding-top: 94px;
 // }
