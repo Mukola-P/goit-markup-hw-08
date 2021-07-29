@@ -1,0 +1,26 @@
+@import "./utils/variables";
+@import "./base/bases";
+@import "./base/container";
+@import "./utils/visually-hidden";
+//header
+@import "./components/logo";
+//header
+@import "./components/header";
+//hero
+@import "./components/hero";
+//hero-modal
+@import "./components/_modal-hero.scss";
+//skill
+@import "./components/skill";
+//work
+@import "./components/work";
+//tean
+@import "./components/team";
+//clients
+@import "./components/clients";
+//backdrop
+@import "./components/backdrop.modal";
+//footer
+@import "./components/footer";
+//portfolio
+@import "./components/portfolio";
