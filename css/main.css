@@ -21,6 +21,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .list {
@@ -248,11 +249,6 @@ ol {
   padding: 0;
 }
 
-.team__cart {
-  max-width: 100%;
-  display: block;
-}
-
 .team__member {
   font-size: 16px;
   line-height: 0.84;
@@ -342,7 +338,7 @@ ol {
     flex-basis: calc((100% - 120px) / 4);
     margin-left: 30px;
     width: 100%;
-    height: 428px;
+    height: 436px;
   }
   .team__list {
     box-shadow: 0px 1px 3px var(--third-color);
@@ -361,12 +357,118 @@ ol {
     text-align: center;
     margin-bottom: 50px;
     color: var(--accent-color);
-    margin-bottom: 50px;
   }
   .team__member,
   .team__activity {
     background-color: #ffffff;
     border-radius: 3px;
+  }
+}
+
+.clients {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.icon-list {
+  flex-basis: calc((100% - 30px) / 7);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.icon-list {
+  width: 170px;
+  height: 92px;
+}
+
+.icon-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  fill: #AFB1B8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-list-link:hover, .icon-list-link:focus {
+  fill: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.clients-list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding: 0;
+  }
+  .icon-list {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .icon-list {
+    width: 210px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding: 0;
+  }
+  .icon-list {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .icon-list {
+    width: 226px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .icon-list {
+    flex-basis: calc((100% - 30px) / 7);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .icon-list {
+    width: 170px;
+    height: 92px;
   }
 }
 /*# sourceMappingURL=main.css.map */
