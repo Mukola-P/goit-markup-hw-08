@@ -1,3 +1,7 @@
+.work{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .work__roster{
   display: flex;
   padding-left: 0;
@@ -46,3 +50,9 @@ margin-bottom: 50px;
     display: none;
   }
 }
+
+// @media screen and (min-width: 1200px){
+//   .work{
+//     display: inline;
+//   }
+// }
