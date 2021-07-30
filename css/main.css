@@ -330,5 +330,10 @@ ol {
     color: var(--accent-color);
     margin: 0px;
   }
+  .team__member,
+  .team__activity {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
