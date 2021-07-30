@@ -80,7 +80,7 @@ margin-bottom: 16px;
 }
 }
 
-.team__list:not(:last-child){
+.team__list{
 margin-bottom: 30px;
 }
 
@@ -95,6 +95,41 @@ margin-bottom: 30px;
      font-size: 36px;
      line-height: 1.16;
    }
+   .team__roster {
+  margin-bottom: 94px;
+}
+
+.team__roster{
+ display: flex;
+ padding-left: 0px;
+justify-content: space-between;
+margin-top: 50px;
+
+}
+
+.team__list{
+  box-shadow: 0px 1px 3px var(--third-color);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 0px;
+}
+
+.team__member,
+.team__activity{
+  background-color: #FFFFFF;
+  border-radius: 3px
+}
+
+.team__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--accent-color);
+  margin: 0px;
+}
+
   
 }
 
