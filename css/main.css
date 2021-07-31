@@ -975,13 +975,9 @@ ol {
     padding-top: 62px;
     padding-bottom: 60px;
   }
-  .logo-txt {
+  .logo-text {
     font-size: 26px;
     line-height: 1.19;
-  }
-  .container {
-    width: 480px;
-    margin: 0 auto;
   }
   .form-footer {
     text-align: center;
