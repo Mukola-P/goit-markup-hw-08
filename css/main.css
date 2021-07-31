@@ -122,18 +122,6 @@ ol {
   color: var(--secondary-color);
 }
 
-.logo-footer {
-  padding: auto;
-}
-
-.logo-second {
-  margin-right: 75px;
-}
-
-.logo-txt {
-  color: var(--white-color);
-}
-
 .header-link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -815,10 +803,6 @@ ol {
   background-color: #188ce8;
 }
 
-.btn-input {
-  display: flex;
-}
-
 .input-form-field {
   width: 100%;
   height: 40px;
@@ -899,6 +883,14 @@ ol {
   color: var(--secondary-color);
 }
 
+.logo-footer {
+  padding: auto;
+}
+
+.logo-txt {
+  color: var(--white-color);
+}
+
 .communication-tel {
   font-style: normal;
   line-height: 1.71;
@@ -913,8 +905,6 @@ ol {
 
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-address {
@@ -938,21 +928,19 @@ ol {
   color: var(--white-color);
 }
 
-.footer-information {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-right-box {
-  width: 206px;
-  margin-right: 102px;
+  text-align: center;
+  padding-bottom: 60px;
 }
 
 .footer-list {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0;
+}
+
+.foter-icon:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-list-social {
@@ -979,6 +967,30 @@ ol {
 .communication {
   margin: 0px;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .logo-second {
+    text-align: center;
+    padding-top: 62px;
+    padding-bottom: 60px;
+  }
+  .logo-txt {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .form-footer {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .button-form {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 
 .card-title {
@@ -1160,7 +1172,7 @@ ol {
     text-align: center;
     padding: 0px;
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
   }
 }
 
