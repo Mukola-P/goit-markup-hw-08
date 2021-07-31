@@ -1,129 +1,155 @@
-// .nav-button {
-//   font-family: var(--main-font);
-//   font-weight: 500;
-//   font-style: normal;
-//   font-size: 16px;
-//   line-height: 1.62;
-//   cursor: pointer;
-//   border: none;
-//   border-radius: 4px;
-//   padding: 6px 22px;
 
-//   color: var(--accent-color);
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//   color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.card-title {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
 
-//   &:hover,
-//   &:focus {
-//   background-color: var(--secondary-color);
-//   color: var(--white-color);
-//   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-//   border-radius: 4px;
-// }
-// }
+  color: var(--accent-color);
+}
 
-// .card-title {
-//   font-family: var(--main-font);
-//   font-weight: bold;
-//   font-size: 18px;
-//   line-height: 2;
-
-//   color: var(--accent-color);
-// }
-
-// .card-text {
-//   font-family: var(--main-font);
-//   font-size: 16px;
-//   line-height: 1.88;
-//   margin-top: 4px;
+.card-text {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.88;
+  margin-top: 4px;
 
 
-//   color: var(--third-color);
-// }
+  color: var(--third-color);
+}
 
-// .description{
-//   padding: 20px 24px;
-//   border-left: 1px solid #EEEEEE;
-//   border-right: 1px solid #EEEEEE;
-//   border-bottom: 1px solid #EEEEEE;
+.description{
+  padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 
-// }
+}
 
-// .nav{
-//   text-align: center;
-//   padding: 0px;
-//   margin-bottom: 50px;
+
+.card-list{
+  padding: 0px;
   
-// }
-// .list-butt{
-//   display: inline-block;
+}
+.portfolio-card{
 
-//   &:not(:last-child){
-//   margin-right: 8px;
-// }
-// }
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
-// .card-list{
-//   padding: 0px;
-//   display: flex;
-//   flex-wrap: wrap;
+.card-way{
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+
+  &:hover,
+  &:focus{        
+  display: block;
+  box-shadow: 0px 1px 1px 
+  rgba(0, 0, 0, 0.12), 0px 4px 4px 
+  rgba(0, 0, 0, 0.06), 1px 4px 6px 
+  rgba(0, 0, 0, 0.16);
+
+  &:hover .overlay,
+  &:focus .overlay{
+  transform: translateY(0%);
+}
+}
+}
+
+
+.img-overlay{
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+position: absolute;
+background: rgba(33, 150, 243, 0.9);
+color: #FFFFFF;
+top: 0;
+left: 0;
+width: 100%;
+height: 105%;
+overflow: auto;
+
+padding: 63px 24px;
+font-family: var(--main-font);
+font-size: 18px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+
+transform: translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+@media screen and (min-width: 480px) {
+  .nav{
+  text-align: left;
+  padding: 0px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  }
+
+.list-butt{
+    margin-bottom: 15px;
+  }
+  .portfolio-card{
+  width: 450px;
   
-// }
-// .portfolio-card{
-//   width: 370px;
-//   margin-right: 30px;
-//   margin-bottom: 30px;
+
+// flex-basis: calc((100% - 30px)/1);
+// margin-left: 30px;
+// margin-top: 30px;
+}
+.description{
+  width: 100%;
+
+}
+}
+
+@media screen and (max-width: 767px){
+  .portfolio-card:not(:last-child){
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-list{
   
-//   &:nth-child(3n){
-//   margin-right: 0px;
-// }
-// }
+  display: flex;
+  flex-wrap: wrap;
 
-// .card-way{
-//   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   display: block;
+  margin-left: -30px;
+  margin-top: -30px;
+  
+}
+.portfolio-card{
+  width: 354px;
 
-//   &:hover,
-//   &:focus{        
-//   display: block;
-//   box-shadow: 0px 1px 1px 
-//   rgba(0, 0, 0, 0.12), 0px 4px 4px 
-//   rgba(0, 0, 0, 0.06), 1px 4px 6px 
-//   rgba(0, 0, 0, 0.16);
+flex-basis: calc((100% - 60px)/2);
+margin-left: 30px;
+margin-top: 30px;
+}
+  }
 
-//   &:hover .overlay,
-//   &:focus .overlay{
-//   transform: translateY(0%);
-// }
-// }
-// }
+@media screen and (min-width: 1200px) {
+   
+  .card-list{
+  // padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
 
-// .imgwork{
-//   width: 370px;
+  margin-left: -30px;
+  margin-top: -30px;
+  
+}
+.portfolio-card{
+  // width: 370px;
 
-// }
-// .img-overlay{
-//   position: relative;
-//   overflow: hidden;
-// }
-// .overlay{
-// position: absolute;
-// background: rgba(33, 150, 243, 0.9);
-// color: #FFFFFF;
-// top: 0;
-// left: 0;
-// width: 100%;
-// height: 100%;
-// overflow: auto;
+flex-basis: calc((100% - 90px)/3);
+margin-left: 30px;
+margin-top: 30px;
+}
 
-// padding: 63px 24px;
-// font-family: var(--main-font);
-// font-size: 18px;
-// line-height: 1.5;
-// letter-spacing: 0.03em;
-
-// transform: translateY(100%);
-// transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-// }
+  }
