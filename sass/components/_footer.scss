@@ -5,7 +5,11 @@
   
   color: var(--white-color);
 }
-
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .communication-mail{
   font-style: normal;
   line-height: 1.71;
@@ -22,9 +26,7 @@
 .logo-footer{
   padding: auto;
 }
-// .logo-second{
-//   margin-right: 75px;
-// }
+
 
 .logo-txt {
   color: var(--white-color);
@@ -42,10 +44,7 @@
   color: var(--secondary-color);
 }
 }
-.footer {
-  background: #2f303a;
-  
-}
+
 .footer-address{
   margin-top: 20px;
 }
@@ -66,24 +65,16 @@ margin-bottom: 20px;
 color: var(--white-color);
 }
 
-// .btn-input {
-//   display: flex;
-// }
-// .footer-information{
-//   display: flex;
-//   align-items: baseline;
-// }
 
-.footer-right-box{
-  text-align: center;
-  padding-bottom: 60px;
-  // width: 206px;
-  // margin-right: 102px;
+// .footer-right-box{
+//   text-align: center;
+//   padding-bottom: 102px;
+//   padding-top: 62px;
   
-}
+// }
 .footer-list{
   display: flex;
-  // align-items: baseline;
+  
   justify-content: center;
   padding:0;
   
@@ -114,17 +105,17 @@ margin-right: 10px;
  
 }
 
+
 .communication {
   margin: 0px;
   padding-left: 0px;
  
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px),(min-width: 480px) {
 
   .logo-second{
   text-align: center;
-  padding-top: 62px;
-  padding-bottom: 60px;
+  padding: 0;
 }
 .logo-text{
   font-size: 26px;
@@ -132,19 +123,70 @@ line-height: 1.19;
 }
   .form-footer{
     text-align: center;
-    padding-bottom: 60px;
+    padding: 0px;
+    margin-top: 60px;
   }
-  .button-form{
-  margin: 0 auto;
-  margin-top: 20px;
+.singup-footer-form{
+  margin-bottom: 20px;
+  width: 100%;
 }
-
+.btn-form{
+  margin: 0 auto;
+}
+.footer-right-box{
+  text-align: center;
+  padding: 0;
+  margin-top: 60px;
+  
+}
 }
 @media screen and (min-width: 768px) {
-  
+  .footer-information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
   }
 
 @media screen and (min-width: 1200px) {
-   
-
+  .footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+}
+.btn-input{
+  display: flex;
+}
+.form-footer{
+    text-align: left;
+    padding: 0;
+    margin: 0;
   }
+.logo-second{
+  text-align: left;
+ padding: 0;
+ margin-right: 70px;
+}
+.footer-right-box{
+  text-align: left;
+  padding: 0;
+  margin-top: 0px;
+  margin-right: 93px;
+  
+}
+.singup-footer-form{
+  margin: 0;
+  width: 358px;
+}
+.button-form{
+  margin-left: 12px;
+}
+.footer-information {
+
+    justify-content: space-between;
+    
+}
+}
