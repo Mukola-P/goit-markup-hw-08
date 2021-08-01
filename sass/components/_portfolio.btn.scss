@@ -23,12 +23,15 @@
     border-radius: 4px;
   }
 }
+.card-list{
+  padding-bottom: 60px;
+}
 
 .nav{
   text-align: left;
   padding: 0px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  padding-top: 60px;
+  
   
   
 }
@@ -46,11 +49,19 @@
   .nav{
   text-align: left;
   padding: 0px;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  padding-top: 60px;
   
-  
+  margin-top: 0;
+
   }
+  .card-list{
+
+  padding-bottom: 60px;
+}
+//   .container{
+// padding-bottom: 60px;
+//   padding-top: 60px;
+//   }
 
 .list-butt{
     margin-bottom: 15px;
@@ -61,18 +72,28 @@
   .nav{
   text-align: center;
   padding: 0px;
-  margin-top: 60px;
+  margin-top: 0;
   margin-bottom: 14px;
+  padding-top: 60px;
   
   
 }
   }
+  .card-list{
+
+  padding-bottom: 60px;
+}
 
 @media screen and (min-width: 1200px) {
    .nav{
-  margin-top: 94px;
+  margin-top: 0;
   margin-bottom: 34px;
+  padding-top: 100px;
   
   
+}
+.card-list{
+
+  padding-bottom: 94px;
 }
   }
