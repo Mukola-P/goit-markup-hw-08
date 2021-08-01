@@ -17,7 +17,7 @@
 
 <body>
     <header class="header bord">
-        <div class="container header-cont">
+        <div class="container header-cont header__container">
             <nav class="navigation ">
                 <a class="logo link " href="./index.html"><span class="logo-text">Web</span>Studio</a>
                 <ul class="menu">
@@ -32,6 +32,11 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./images/sprite.svg#icon-burger-btn"></use>
+                </svg>
+            </button>
             
             <ul class="auth-nav list header">
                 <li>
@@ -51,6 +56,54 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="close-burger mobile-menu_close-btn" data-menu-close>
+                    <svg class="close-burger__icon">
+                        <use href="./images/sprite.svg#icon-close_burger"></use>
+                    </svg>
+                </button>
+                <div class="burger-list">
+                    <ul class="mobile-list list">
+                        <li class="mobile-list__iteam"> 
+                            <a href="" class="mobile-list__link link">Студия</a>
+                        </li>
+                        <li class="mobile-list__iteam"> 
+                            <a href="" class="mobile-list__link link">Портфолио</a>
+                        </li>
+                        <li class="mobile-list__iteam"> 
+                            <a href="" class="mobile-list__link link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger-nav">
+                    <ul class="mobile-nav list">
+                        <li class="mobile-tell">
+                            <a href="tel:+380991111111" class="mobile-tell__link link">+38 099 111 11 11</a>
+                        </li>
+                        <li class="mobile-mail">
+                            <a href="mailto:info@devstudio.com" class="mobile-mail__link link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger-social">
+                    <ul class="mobile-social list">
+                        <li class="mobile-social__list">
+                            <a href="" class="mobile-social__link link">Instagram</a>
+                        </li>
+                        <li class="mobile-social__list">
+                            <a href="" class="mobile-social__link link">Twitter</a>
+                        </li>
+                        <li class="mobile-social__list">
+                            <a href="" class="mobile-social__link link">Facebook</a>
+                        </li>
+                        <li class="mobile-social__list">
+                            <a href="" class="mobile-social__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -538,9 +591,10 @@
                 <button type="submit" class="form-modal-btn">Отправить</button>
             </form>
         </div>
-    </div>
-
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script>  -->
+    
 </body>
 
 </html> 
