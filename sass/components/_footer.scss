@@ -128,7 +128,7 @@ line-height: 1.19;
   }
 .singup-footer-form{
   margin-bottom: 20px;
-  width: 450px;
+  width: 100%;
 }
 .btn-form{
   margin: 0 auto;
@@ -147,6 +147,11 @@ line-height: 1.19;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+  
+}
+.singup-footer-form{
+  
+  width: 450px;
 }
   }
 
