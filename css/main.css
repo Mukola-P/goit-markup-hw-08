@@ -276,10 +276,13 @@ ol {
 .mobile-social {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 25px;
 }
 
 .mobile-social__link {
+  justify-content: left;
+  width: 100%;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
