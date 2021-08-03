@@ -87,7 +87,6 @@ ol {
 .visually-hidden-checkbox {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
@@ -560,6 +559,9 @@ ol {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/bg-main.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
   }
 }
 
