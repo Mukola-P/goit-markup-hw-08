@@ -171,9 +171,12 @@ ol {
 
 .mobile-menu-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 15px;
+  height: 100%;
 }
 
 .mobile-menu_close-btn {
@@ -210,10 +213,6 @@ ol {
 .mobile-nav,
 .mobile-social {
   padding: 0;
-}
-
-.burger-list {
-  margin-bottom: 302px;
 }
 
 .bord {
@@ -268,6 +267,7 @@ ol {
 }
 
 .burger-nav {
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -422,7 +422,7 @@ ol {
     background: #2196F3;
     border-radius: 2px;
     display: block;
-    bottom: -5px;
+    bottom: -2px;
   }
   .logo {
     font-family: var(--secondary-font);
@@ -543,16 +543,50 @@ ol {
 }
 
 .hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+}
+
+.hero__title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  color: var(--white-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-bottom: 30px;
+}
+
+.hero {
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/bg-main.jpg);
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/bg-main@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/bg-main.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 120dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/bg-main@2x.jpg);
   }
 }
 
@@ -574,28 +608,29 @@ ol {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/deckstope/bg-main.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/deckstope/bg-main@2x.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
   }
-}
-
-.hero__title {
-  font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  margin-bottom: 30px;
-  color: var(--white-color);
-}
-
-.hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
-  text-align: center;
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .modal-btn {
@@ -786,6 +821,10 @@ ol {
   padding-right: 32px;
   background-color: var(--white-color);
   width: 100%;
+}
+
+.social-list_team:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list {
@@ -1070,6 +1109,7 @@ ol {
   line-height: 1.7;
   color: #757575;
   justify-content: center;
+  flex-wrap: wrap;
   letter-spacing: 0.03em;
 }
 
@@ -1399,6 +1439,9 @@ ol {
   .singup-footer-form {
     width: 450px;
   }
+  .footer-right-box {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1515,7 +1558,6 @@ ol {
     text-align: left;
     padding: 0px;
     margin-top: 60px;
-    margin-bottom: 40px;
   }
   .list-butt {
     margin-bottom: 15px;
@@ -1596,9 +1638,6 @@ ol {
 
 .list-butt {
   display: inline-block;
-}
-
-.list-butt:not(:last-child) {
   margin-right: 8px;
   margin-bottom: 15px;
 }

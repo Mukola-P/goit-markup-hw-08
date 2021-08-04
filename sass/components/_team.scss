@@ -43,7 +43,9 @@
   background-color: var(--white-color);
   width: 100%;
 }
-
+.social-list_team:not(:last-child){
+    margin-right: 10px;
+  }
 .social-list {
   padding: 0;
   display: flex;
@@ -72,6 +74,7 @@
     fill: #ffffff;
     background-color: #2196f3;
   }
+  
 }
 
 .team__list {

@@ -54,9 +54,12 @@ height: 40px;
 
 .mobile-menu-container{
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 15px;
+  height: 100%;
   
 }
 
@@ -101,9 +104,9 @@ height: 40px;
   padding: 0;
 }
 
-.burger-list{
-  margin-bottom: 302px;
-}
+// .burger-list{
+//   margin-bottom: 302px;
+// }
 
 .bord {
   border-bottom: 1px solid #ECECEC;
@@ -161,6 +164,7 @@ color: #2196F3;
   padding-bottom: 25px;
 }
 .burger-nav{
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -340,7 +344,7 @@ color: #2196F3;
   background: #2196F3;
   border-radius: 2px;
   display: block;
-  bottom: -5px;
+  bottom: -2px;
 }
 }
 .logo{
