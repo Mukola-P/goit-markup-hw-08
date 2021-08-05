@@ -1,10 +1,3 @@
-// .hero__title {
-//   font-family: var(--main-font);
-//   font-weight: 900;
-
-//   margin-bottom: 30px;
-//   color: var(--white-color);
-// }
 
 .hero {
 padding-top: 118px;
@@ -22,13 +15,7 @@ text-align: center;
 letter-spacing: 0.06em;
  margin-bottom: 30px;
 }  
-// .hero {
-//   padding-top: 118px;
-//   padding-bottom: 118px;
-//   text-align: center;
-  
-  
-// }
+
 
 .hero{
  text-align: center;
@@ -89,21 +76,11 @@ letter-spacing: 0.06em;
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url(../images/tablet/bg-main.jpg);
+            url(../images/deckstope/bg-main.jpg);
             background-size: cover;
     background-repeat: repeat;
     background-position: center;
     
-//     padding-top: 118px;
-//   padding-bottom: 118px;
-//   text-align: center;
-    
-//     &__title {
-  
-//   font-size: 26px;
-//   line-height: 1.61;
-//  letter-spacing: 0.06em;
-// }  
   }
 }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -114,17 +91,8 @@ letter-spacing: 0.06em;
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url(../images/tablet/bg-main@2x.jpg);
-//   padding-top: 118px;
-//   padding-bottom: 118px;
-//   text-align: center;
-    
-//     &__title {
-  
-//   font-size: 26px;
-//   line-height: 1.61;
-//  letter-spacing: 0.06em;
-// }  
+            url(../images/deckstope/bg-main@2x.jpg);
+
     }
 }
 
@@ -170,19 +138,4 @@ letter-spacing: 0.06em;
 }
   }
 }
-// .hero__title {
-//   font-family: var(--main-font);
-//   font-weight: 900;
-//   font-size: 26px;
-//   line-height: 1.61;
-//   margin-bottom: 30px;
-//   color: var(--white-color);
-// }
 
-// .hero {
-//   padding-top: 118px;
-//   padding-bottom: 118px;
-//   text-align: center;
-  
-  
-// }
